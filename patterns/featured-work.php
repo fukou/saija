@@ -30,8 +30,8 @@
     <div class="wp-block-column">
       <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"},"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"default"}} -->
       <div class="wp-block-group">
-        <!-- wp:cover {"useFeaturedImage":true,"dimRatio":50,"customOverlayColor":"#eeeeee","isUserOverlayColor":true,"contentPosition":"bottom left","isDark":false,"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}},"border":{"width":"1px","radius":"16px"}}} -->
-        <div class="wp-block-cover is-light has-custom-content-position is-position-bottom-left"
+        <!-- wp:cover {"useFeaturedImage":true,"dimRatio":50,"customOverlayColor":"#eeeeee","isUserOverlayColor":true,"contentPosition":"bottom left","isDark":false,"className":"is-style-saija-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}},"border":{"width":"1px","radius":"16px"}}} -->
+        <div class="wp-block-cover is-light has-custom-content-position is-position-bottom-left is-style-saija-card"
           style="border-width:1px;border-radius:16px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)">
           <span aria-hidden="true" class="wp-block-cover__background has-background-dim"
             style="background-color:#eeeeee"></span>
@@ -58,7 +58,7 @@
 
   <!-- wp:query-no-results -->
   <!-- wp:paragraph {"placeholder":"Add text or blocks that will display when a query returns no results."} -->
-  <p></p>
+  <p>No featured work available</p>
   <!-- /wp:paragraph -->
   <!-- /wp:query-no-results -->
 </div>
