@@ -200,17 +200,33 @@ add_action('init', 'saija_block_stylesheets');
 
 
 /**
- * Enqueue the JS files.
+ * Enqueue the marquee JS files.
  *
  * @since 1.0.0
  * @return void
  */
-if (!function_exists('saija_scripts')):
-  function saija_scripts()
+if (!function_exists('saija_marquee_scripts')):
+  function saija_marquee_scripts()
   {
 
     wp_enqueue_script('marquee', get_theme_file_uri('assets/js/marquee.js'), array(), wp_get_theme('saija')->get('Version'), array('in_footer' => true));
 
   }
 endif;
-add_action('wp_enqueue_scripts', 'saija_scripts');
+add_action('wp_enqueue_scripts', 'saija_marquee_scripts');
+
+/**
+ * Enqueue the clock JS files.
+ *
+ * @since 1.0.0
+ * @return void
+ */
+if (!function_exists('saija_clock_scripts')):
+  function saija_clock_scripts()
+  {
+
+    wp_enqueue_script('clock', get_theme_file_uri('assets/js/clock.js'), array(), wp_get_theme('saija')->get('Version'), array('in_footer' => true));
+
+  }
+endif;
+add_action('wp_enqueue_scripts', 'saija_clock_scripts');
