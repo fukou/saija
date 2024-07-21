@@ -16,28 +16,27 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 /* Styles intended only for the front.*/
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-
-	html {
-		scroll-behavior: auto;
-	}
+    html {
+        scroll-behavior: auto;
+    }
 }
 
 body {
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
-[class*="is-style-saija-marquee"] {
-	display: block; /* Ensure block-level for full-width containers */
-	overflow: hidden; /* Hide overflowing content */
-	position: relative; /* Position relative to manage child placement */
+body:not(.editor-styles-wrapper) [class*="is-style-saija-marquee"] {
+    display: block;
+    overflow: hidden; 
+    position: relative; 
 }
 
-[class*="is-style-saija-marquee"] > * {
-  display: flex;
-  gap: var(--wp--preset--spacing--80, inherit);
+body:not(.editor-styles-wrapper) [class*="is-style-saija-marquee"] > * {
+    display: flex;
+    gap: var(--wp--preset--spacing--80, inherit);
 }
