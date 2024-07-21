@@ -75,8 +75,8 @@
         <h2 class="wp-block-heading has-inter-font-family" style="font-size:7rem">🌏</h2>
         <!-- /wp:heading -->
 
-        <!-- wp:heading {"style":{"typography":{"fontSize":"7rem"}},"fontFamily":"inter"} -->
-        <h2 class="wp-block-heading has-inter-font-family" style="font-size:7rem">04:12</h2>
+        <!-- wp:heading {"className":"is-style-saija-clock","style":{"typography":{"fontSize":"7rem"}},"fontFamily":"body"} -->
+        <h2 class="wp-block-heading is-style-saija-clock has-body-font-family" style="font-size:7rem">00:00</h2>
         <!-- /wp:heading -->
 
         <!-- wp:paragraph {"align":"right","fontSize":"x-large"} -->
@@ -93,9 +93,10 @@
   <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--30);padding-bottom:0">
     <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast"}}}},"textColor":"contrast-2","fontSize":"small"} -->
     <p class="has-contrast-2-color has-text-color has-link-color has-small-font-size">
-      Designed with <a href="https://wordpress.org" rel="nofollow">WordPress</a>. <?php echo esc_html__( 'Copyright &copy;', 'saija' ) . ' ' . date_i18n( _x( 'Y', 'copyright date format', 'saija' ) ); ?></p>
+      Designed with <a href="https://wordpress.org" rel="nofollow">WordPress</a>. Copyright © 2024</p>
     <!-- /wp:paragraph -->
   </div>
   <!-- /wp:group -->
 </div>
 <!-- /wp:group -->
+ 
