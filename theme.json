@@ -36,6 +36,11 @@
                     "name": "Secondary"
                 },
                 {
+                    "slug": "white",
+                    "color": "#FFFFFF",
+                    "name": "White"
+                },
+                {
                     "slug": "transparent",
                     "color": "transparent",
                     "name": "Transparent"
@@ -43,7 +48,7 @@
             ]
         },
         "layout": {
-            "contentSize": "750px",
+            "contentSize": "900px",
             "wideSize": "1240px"
         },
         "spacing": {
@@ -90,6 +95,50 @@
                 {
                     "fontFace": [
                         {
+                            "fontFamily": "Favorit",
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                            "src": [
+                                "file:./assets/fonts/favorit/FavoritTumblr-85.woff"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Favorit",
+                            "fontStyle": "normal",
+                            "fontWeight": "600",
+                            "src": [
+                                "file:./assets/fonts/favorit/FavoritTumblr-Medium.woff"
+                            ]
+                        }
+                    ],
+                    "fontFamily": "Favorit",
+                    "name": "Favorit",
+                    "slug": "body"
+                },
+                {
+                    "fontFace": [
+                        {
+                            "fontFamily": "Instrument Serif",
+                            "fontStyle": "normal",
+                            "src": [
+                                "file:./assets/fonts/instrument-serif/InstrumentSerif-Regular.ttf"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Instrument Serif",
+                            "fontStyle": "italic",
+                            "src": [
+                                "file:./assets/fonts/instrument-serif/InstrumentSerif-Italic.ttf"
+                            ]
+                        }
+                    ],
+                    "fontFamily": "Instrument Serif",
+                    "name": "Instrument Serif",
+                    "slug": "heading"
+                },
+                {
+                    "fontFace": [
+                        {
                             "fontFamily": "Inter",
                             "fontStretch": "normal",
                             "fontStyle": "normal",
@@ -101,7 +150,7 @@
                     ],
                     "fontFamily": "\"Inter\", sans-serif",
                     "name": "Inter",
-                    "slug": "body"
+                    "slug": "inter"
                 },
                 {
                     "fontFace": [
@@ -132,7 +181,7 @@
                     ],
                     "fontFamily": "Cardo",
                     "name": "Cardo",
-                    "slug": "heading"
+                    "slug": "cardo"
                 },
                 {
                     "fontFamily": "-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif",
@@ -231,6 +280,9 @@
                         "left": "var(--wp--preset--spacing--10)"
                     }
                 }
+            },
+            "core/template-part": {
+                "css": "& { margin: 0; }"
             }
         },
         "color": {
@@ -268,7 +320,7 @@
                     }
                 },
                 "border": {
-                    "radius": ".33rem",
+                    "radius": "100px",
                     "color": "var(--wp--preset--color--contrast)"
                 },
                 "color": {
@@ -341,7 +393,7 @@
             },
             "link": {
                 "typography": {
-                  "textDecoration": "none"
+                    "textDecoration": "none"
                 },
                 ":hover": {
                     "typography": {
@@ -386,11 +438,6 @@
             "name": "page-no-title",
             "postTypes": ["page"],
             "title": "Page No Title"
-        },
-        {
-            "name": "page-wide",
-            "postTypes": ["page"],
-            "title": "Page with Wide Image"
         },
         {
             "name": "page-about",
