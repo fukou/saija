@@ -59,12 +59,15 @@ if (!function_exists('saija_block_styles')):
 				.is-style-pill span:not([class], [data-rich-text-placeholder]) {
 					display: inline-block;
 					background-color: var(--wp--preset--color--base-2);
+          color: var(--wp--preset--color--white);
 					padding: 0.375rem 0.875rem;
 					border-radius: var(--wp--preset--spacing--20);
+          text-decoration: none !important;
 				}
 
 				.is-style-pill a:hover {
-					background-color: var(--wp--preset--color--contrast-3);
+					background-color: var(--wp--preset--color--contrast-2);
+          color: var(--wp--preset--color--white);
 				}',
       )
     );
