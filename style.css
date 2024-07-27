@@ -60,6 +60,14 @@ body
     border-radius: 30px;
 }
 
+body:is(.home)
+    .wp-site-blocks
+    > header
+    .wp-block-navigation
+    .wp-block-buttons:nth-child(1) > .wp-block-button:nth-child(1) > a {
+      background: #ddd !important;
+    }
+
 body
     .wp-site-blocks
     header
