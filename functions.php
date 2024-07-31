@@ -233,3 +233,19 @@ if (!function_exists('saija_clock_scripts')):
   }
 endif;
 add_action('wp_enqueue_scripts', 'saija_clock_scripts');
+
+/**
+ * Enqueue the marquee JS files.
+ *
+ * @since 1.0.0
+ * @return void
+ */
+if (!function_exists('saija_header_scripts')):
+  function saija_header_scripts()
+  {
+
+    wp_enqueue_script('header', get_theme_file_uri('assets/js/header-sticky.js'), array(), wp_get_theme('saija')->get('Version'), array('in_footer' => true));
+
+  }
+endif;
+add_action('wp_enqueue_scripts', 'saija_header_scripts');
